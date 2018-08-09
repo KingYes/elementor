@@ -64,7 +64,7 @@ jobs:
   #  docker:
   #  - image: pojome/php-cli:5.6
   #  - image: *mysql_image
-#
+  #
   #php56-wp-47-build:
   #  <<: *php_job
   #  environment:
