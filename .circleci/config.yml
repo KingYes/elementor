@@ -29,8 +29,7 @@ job-references:
 
   php_job: &php_job
     environment:
-    - WP_TESTS_DIR: "/tmp/wordpress-tests-lib"
-    - WP_CORE_DIR: "/tmp/wordpress/"
+    - WP_VERSION: "latest"
     steps:
     - checkout
     - run: *setup_environment
@@ -43,25 +42,33 @@ job-references:
           composer global require --dev jakub-onderka/php-parallel-lint
           #phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
           #phpcs -p -s -n . --standard=./ruleset.xml --extensions=php
-          jscs -c .jscsrc .
-          jshint .
+          #jscs -c .jscsrc .
+          #jshint .
           parallel-lint --blame --exclude node_modules --exclude vendor .
-          rm -rf $WP_TESTS_DIR $WP_CORE_DIR
-          bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 latest
-          phpunit --coverage-clover=build/logs/clover.xml
-          WP_MULTISITE=1 phpunit --coverage-clover=build/logs/clover.xml
-          rm -rf $WP_TESTS_DIR $WP_CORE_DIR
-          bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 4.8
-          phpunit --coverage-clover=build/logs/clover.xml
-          WP_MULTISITE=1 phpunit --coverage-clover=build/logs/clover.xml
-          rm -rf $WP_TESTS_DIR $WP_CORE_DIR
-          bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 4.7
+          rm -rf /tmp/wordpress-tests-lib /tmp/wordpress
+          bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 $WP_VERSION
           phpunit --coverage-clover=build/logs/clover.xml
           WP_MULTISITE=1 phpunit --coverage-clover=build/logs/clover.xml
 
 jobs:
-  php56-build:
+  php56-wp-latest-build:
     <<: *php_job
+    docker:
+    - image: circleci/php:5.6
+    - image: *mysql_image
+
+  php56-wp-48-build:
+    <<: *php_job
+    environment:
+    - WP_VERSION: "4.8"
+    docker:
+    - image: circleci/php:5.6
+    - image: *mysql_image
+
+  php56-wp-47-build:
+    <<: *php_job
+    environment:
+    - WP_VERSION: "4.7"
     docker:
     - image: circleci/php:5.6
     - image: *mysql_image
