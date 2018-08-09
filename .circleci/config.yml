@@ -45,7 +45,7 @@ job-references:
           rm -rf $WP_TESTS_DIR $WP_CORE_DIR
           bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 latest
           phpunit --coverage-clover=build/logs/clover.xml
-          WP_MULTISITE=1 phpunit
+          WP_MULTISITE=1 phpunit --coverage-clover=build/logs/clover.xml
 
 jobs:
   php56-build:
@@ -68,13 +68,7 @@ jobs:
           rm -rf $WP_TESTS_DIR $WP_CORE_DIR
           bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 latest $SKIP_DB_CREATE
           phpunit --coverage-clover=build/logs/clover.xml
-          WP_MULTISITE=1 phpunit
-          SKIP_DB_CREATE=true
-          rm -rf $WP_TESTS_DIR $WP_CORE_DIR
-          bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 trunk $SKIP_DB_CREATE
-          phpunit --coverage-clover=build/logs/clover.xml
-          WP_MULTISITE=1 phpunit
-          SKIP_DB_CREATE=true
+          WP_MULTISITE=1 phpunit --coverage-clover=build/logs/clover.xml
 
   php70-build:
     <<: *php_job
