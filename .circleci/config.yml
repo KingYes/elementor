@@ -50,7 +50,6 @@ job-references:
 jobs:
   php56-build:
     <<: *php_job
-    parallelism: 1
     docker:
     - image: circleci/php:5.6
     - image: *mysql_image
@@ -73,7 +72,6 @@ jobs:
 
   php70-build:
     <<: *php_job
-    parallelism: 2
     docker:
     - image: circleci/php:7.0
     - image: *mysql_image
