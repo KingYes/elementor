@@ -108,13 +108,13 @@ install_db() {
 # Install JSCS: JavaScript Code Style checker
 # @link http://jscs.info/
 install_jscs() {
-	npm install -g jscs@3.0.4
+	sudo npm install -g jscs@3.0.4
 }
 
 # Install JSHint, a JavaScript Code Quality Tool
 # @link http://jshint.com/docs/
 install_jshint() {
-	npm install -g jshint
+	sudo npm install -g jshint
 }
 
 install_wp
