@@ -95,16 +95,27 @@ jobs:
   js-lint:
     docker:
     - image: pojome/php-js-lints
+    parallelism: 1
     steps:
     - checkout
     - run:
-        parallelism: 1
         name: "Run JS lint"
         command: |
           jscs -c .jscsrc .
           jshint .
     - run:
-        parallelism: 2
+        name: "Run PHP lint"
+        command: |
+          export PATH=$HOME/.composer/vendor/bin:$PATH
+          phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
+          phpcs -p -s -n . --standard=./ruleset.xml --extensions=php
+
+  php-lint:
+    docker:
+    - image: pojome/php-js-lints
+    steps:
+    - checkout
+    - run:
         name: "Run PHP lint"
         command: |
           export PATH=$HOME/.composer/vendor/bin:$PATH
