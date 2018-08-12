@@ -5,9 +5,15 @@ workflows:
     - php56-wp-latest-build
     - php56-wp48-build
     - php56-wp47-build
-    - php70-build
-    - php71-build
-    - php72-build
+    - php70-wp-latest-build
+    - php70-wp48-build
+    - php70-wp47-build
+    - php71-wp-latest-build
+    - php71-wp48-build
+    - php71-wp47-build
+    - php72-wp-latest-build
+    - php72-wp48-build
+    - php72-wp47-build
     - php-lint
     - js-lint
 
@@ -78,20 +84,68 @@ jobs:
     - image: pojome/php-cli:5.6
     - image: *mysql_image
 
-  php70-build:
+  php70-wp-latest-build:
     <<: *php_job
     docker:
     - image: pojome/php-cli:7.0
     - image: *mysql_image
 
-  php71-build:
+  php70-wp48-build:
+    <<: *php_job
+    environment:
+    - WP_VERSION: "4.8"
+    docker:
+    - image: pojome/php-cli:7.0
+    - image: *mysql_image
+
+  php70-wp47-build:
+    <<: *php_job
+    environment:
+    - WP_VERSION: "4.7"
+    docker:
+    - image: pojome/php-cli:7.0
+    - image: *mysql_image
+
+  php71-wp-latest-build:
     <<: *php_job
     docker:
     - image: pojome/php-cli:7.1
     - image: *mysql_image
 
-  php72-build:
+  php71-wp48-build:
     <<: *php_job
+    environment:
+    - WP_VERSION: "4.8"
+    docker:
+    - image: pojome/php-cli:7.1
+    - image: *mysql_image
+
+  php71-wp47-build:
+    <<: *php_job
+    environment:
+    - WP_VERSION: "4.7"
+    docker:
+    - image: pojome/php-cli:7.1
+    - image: *mysql_image
+
+  php72-wp-latest-build:
+    <<: *php_job
+    docker:
+    - image: pojome/php-cli:7.2
+    - image: *mysql_image
+
+  php72-wp48-build:
+    <<: *php_job
+    environment:
+    - WP_VERSION: "4.8"
+    docker:
+    - image: pojome/php-cli:7.2
+    - image: *mysql_image
+
+  php72-wp47-build:
+    <<: *php_job
+    environment:
+    - WP_VERSION: "4.7"
     docker:
     - image: pojome/php-cli:7.2
     - image: *mysql_image
