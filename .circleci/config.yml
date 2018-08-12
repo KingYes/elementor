@@ -37,7 +37,7 @@ job-references:
 
   php_job: &php_job
     environment:
-    - WP_VERSION: "latest"
+    - WP_VERSION: "4.7"
     steps:
     - checkout
     - run: *setup_environment
