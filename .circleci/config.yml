@@ -54,7 +54,7 @@ jobs:
   php56-build:
     <<: *php_job
     docker:
-    - image: circleci/php:5.6
+    - image: pojome/php-cli:5.6
     - image: *mysql_image
 
   #php56-wp-48-build:
