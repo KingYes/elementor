@@ -2,7 +2,9 @@ workflows:
   version: 2
   tests:
     jobs:
-    - php56-build
+    - php56-wp-latest-build
+    - php56-wp48-build
+    - php56-wp47-build
     - php70-build
     - php71-build
     - php72-build
@@ -54,8 +56,24 @@ job-references:
           parallel-lint --blame --exclude node_modules --exclude vendor .
 
 jobs:
-  php56-build:
+  php56-wp-latest-build:
     <<: *php_job
+    docker:
+    - image: pojome/php-cli:5.6
+    - image: *mysql_image
+
+  php56-wp48-build:
+    <<: *php_job
+    environment:
+    - WP_VERSION: "4.8"
+    docker:
+    - image: pojome/php-cli:5.6
+    - image: *mysql_image
+
+  php56-wp47-build:
+    <<: *php_job
+    environment:
+    - WP_VERSION: "4.7"
     docker:
     - image: pojome/php-cli:5.6
     - image: *mysql_image
