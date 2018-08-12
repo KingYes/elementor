@@ -65,6 +65,10 @@ if ( ! version_compare( PHP_VERSION, '5.4', '>=' ) ) {
  */
 function elementor_load_plugin_textdomain() {
 	load_plugin_textdomain( 'elementor' );
+
+	if ( empty( elementor_fail_php_version() ) ) {
+		return;
+	}
 }
 
 /**
