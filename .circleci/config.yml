@@ -102,6 +102,9 @@ jobs:
     docker:
     - image: pojome/php-cli:7.2
     steps:
+    - checkout
+    - run: *setup_environment
+    - run: *install_dependencies
     - run:
       name: "Run JS lint"
       command: |
