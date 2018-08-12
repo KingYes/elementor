@@ -6,6 +6,8 @@ workflows:
     - php70-build
     - php71-build
     - php72-build
+    #- php-lint
+    - js-lint
 
 version: 2
 
@@ -95,3 +97,14 @@ jobs:
     docker:
     - image: pojome/php-cli:7.2
     - image: *mysql_image
+
+  js-lint:
+    docker:
+    - image: pojome/php-cli:7.2
+    parallelism: 2
+    steps:
+      - run:
+        name: "Run JS lint"
+        command: |
+          jscs -c .jscsrc .
+          jshint .
