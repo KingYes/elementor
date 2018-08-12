@@ -103,8 +103,6 @@ jobs:
     - image: pojome/php-js-lints
     steps:
     - checkout
-    - run: *setup_environment
-    - run: *install_dependencies
     - run:
         name: "Run JS lint"
         command: |
