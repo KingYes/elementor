@@ -6,7 +6,7 @@ workflows:
     - php70-build
     - php71-build
     - php72-build
-    #- php-lint
+    - php-lint
     - js-lint
 
 version: 2
@@ -95,7 +95,6 @@ jobs:
   js-lint:
     docker:
     - image: pojome/php-js-lints
-    parallelism: 2
     steps:
     - checkout
     - run:
@@ -103,12 +102,6 @@ jobs:
         command: |
           jscs -c .jscsrc .
           jshint .
-    - run:
-        name: "Run PHP lint"
-        command: |
-          export PATH=$HOME/.composer/vendor/bin:$PATH
-          phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
-          phpcs -p -s -n . --standard=./ruleset.xml --extensions=php
 
   php-lint:
     docker:
