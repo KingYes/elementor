@@ -101,10 +101,9 @@ jobs:
   js-lint:
     docker:
     - image: pojome/php-cli:7.2
-    parallelism: 2
     steps:
-      - run:
-        name: "Run JS lint"
-        command: |
-          jscs -c .jscsrc .
-          jshint .
+    - run:
+      name: "Run JS lint"
+      command: |
+        jscs -c .jscsrc .
+        jshint .
