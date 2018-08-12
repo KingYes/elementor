@@ -98,11 +98,13 @@ jobs:
     steps:
     - checkout
     - run:
+        parallelism: 1
         name: "Run JS lint"
         command: |
           jscs -c .jscsrc .
           jshint .
     - run:
+        parallelism: 2
         name: "Run PHP lint"
         command: |
           export PATH=$HOME/.composer/vendor/bin:$PATH
