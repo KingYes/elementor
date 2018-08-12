@@ -95,7 +95,7 @@ jobs:
   js-lint:
     docker:
     - image: pojome/php-js-lints
-    parallelism: 1
+    parallelism: 2
     steps:
     - checkout
     - run:
