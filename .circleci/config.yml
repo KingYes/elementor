@@ -106,7 +106,7 @@ jobs:
     - run: *setup_environment
     - run: *install_dependencies
     - run:
-      name: "Run JS lint"
-      command: |
-        jscs -c .jscsrc .
-        jshint .
+        name: "Run JS lint"
+        command: |
+          jscs -c .jscsrc .
+          jshint .
