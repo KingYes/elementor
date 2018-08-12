@@ -29,6 +29,12 @@ job-references:
       #sudo sh -c "printf '\ndeb http://ftp.us.debian.org/debian sid main\n' >> /etc/apt/sources.list"
       #sudo apt-get update && sudo apt-get install mysql-client-5.7 npm
 
+  install_wp_core: &install_wp_core
+    name: "Install WordPress Core"
+    command: |
+      rm -rf /tmp/wordpress-tests-lib /tmp/wordpress
+      bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 $WP_VERSION
+
   php_job: &php_job
     environment:
     - WP_VERSION: "latest"
@@ -36,17 +42,12 @@ job-references:
     - checkout
     - run: *setup_environment
     - run: *install_dependencies
+    - run: *install_wp_core
     - run:
-        name: "Run Tests"
+        name: "Run PHPUnit Single Site"
         command: |
-          #composer global require "phpunit/phpunit=5.7.*"
-          #composer global require wp-coding-standards/wpcs
-          #composer global require --dev jakub-onderka/php-parallel-lint
-          #phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
-          #phpcs -p -s -n . --standard=./ruleset.xml --extensions=php
-          #parallel-lint --blame --exclude node_modules --exclude vendor .
-          rm -rf /tmp/wordpress-tests-lib /tmp/wordpress
-          bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 $WP_VERSION
+          #rm -rf /tmp/wordpress-tests-lib /tmp/wordpress
+          #bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 $WP_VERSION
           phpunit --coverage-clover=build/logs/clover.xml
           WP_MULTISITE=1 phpunit --coverage-clover=build/logs/clover.xml
           parallel-lint --blame --exclude node_modules --exclude vendor .
