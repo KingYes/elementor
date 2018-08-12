@@ -33,7 +33,7 @@ job-references:
     steps:
     - checkout
     - run: *setup_environment
-    #- run: *install_dependencies
+    - run: *install_dependencies
     - run:
         name: "Run Tests"
         command: |
