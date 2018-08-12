@@ -121,4 +121,4 @@ install_wp
 install_test_suite
 install_db
 #install_jscs
-#install_jshint
+install_jshint
