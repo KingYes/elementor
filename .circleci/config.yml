@@ -100,7 +100,7 @@ jobs:
 
   js-lint:
     docker:
-    - image: pojome/php-cli:7.2
+    - image: pojome/php-js-lints
     steps:
     - checkout
     - run: *setup_environment
