@@ -37,19 +37,23 @@ job-references:
 
   php_job: &php_job
     environment:
-    - WP_VERSION: "4.7"
+    - WP_VERSION: "latest"
     steps:
     - checkout
     - run: *setup_environment
     - run: *install_dependencies
     - run: *install_wp_core
     - run:
-        name: "Run PHPUnit Single Site"
-        command: |
-          #rm -rf /tmp/wordpress-tests-lib /tmp/wordpress
-          #bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1 $WP_VERSION
+        name: "Run PHPUnit on Single Site"
+        command: |ß
           phpunit --coverage-clover=build/logs/clover.xml
+    - run:
+        name: "Run PHPUnit on Multi Site"
+        command: |
           WP_MULTISITE=1 phpunit --coverage-clover=build/logs/clover.xml
+    - run:
+        name: "Run PHP Parallel Lint"
+        command: |
           parallel-lint --blame --exclude node_modules --exclude vendor .
 
 jobs:
