@@ -45,7 +45,7 @@ job-references:
     - run: *install_wp_core
     - run:
         name: "Run PHPUnit on Single Site"
-        command: |ß
+        command: |
           phpunit --coverage-clover=build/logs/clover.xml
     - run:
         name: "Run PHPUnit on Multi Site"
