@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PHP_CodeSniffer 2.9.0" tests="198" failures="3">
+<testsuite name="/Users/yakir/Git/elementor/core/settings/page/model.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/settings/page/model.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/settings/page/manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/settings/page/manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/settings/general/model.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/settings/general/model.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/settings/general/manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/settings/general/manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/settings/manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/settings/manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/settings/base/model.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/settings/base/model.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/settings/base/manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/settings/base/manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/responsive/files/frontend.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/responsive/files/frontend.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/responsive/responsive.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/responsive/responsive.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/modules-manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/modules-manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/ajax-manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/ajax-manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/dynamic-tags/data-tag.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/dynamic-tags/data-tag.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/dynamic-tags/dynamic-css.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/dynamic-tags/dynamic-css.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/dynamic-tags/base-tag.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/dynamic-tags/base-tag.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/dynamic-tags/tag.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/dynamic-tags/tag.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/dynamic-tags/manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/dynamic-tags/manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/utils/exceptions.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/utils/exceptions.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/role-manager/role-manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/role-manager/role-manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/files/css/post.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/files/css/post.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/files/css/global-css.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/files/css/global-css.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/files/css/post-preview.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/files/css/post-preview.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/files/css/base.php" tests="1" failures="1">
+ <testcase name="WordPress.WP.EnqueuedResourceParameters.MissingVersion at /Users/yakir/Git/elementor/core/files/css/base.php (206:13)">
+  <failure type="error" message="Resource version not set in call to wp_enqueue_style(). This means new versions of the style will not always be loaded due to browser caching."/>
+ </testcase>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/files/manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/files/manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/files/base.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/files/base.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/documents-manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/documents-manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/document-types/post.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/document-types/post.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/base/document.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/base/document.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/base/module.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/base/module.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/core/debug/inspector.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/core/debug/inspector.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/maintenance.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/maintenance.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/schemes/typography.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/schemes/typography.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/schemes/color.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/schemes/color.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/schemes/base.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/schemes/base.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/schemes/color-picker.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/schemes/color-picker.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/settings-page.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/settings-page.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/settings.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/settings.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/tools.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/tools.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/validations.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/validations.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/controls.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/controls.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/main.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/main.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/server.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/server.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/network-plugins.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/network-plugins.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/theme.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/theme.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/user.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/user.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/plugins.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/plugins.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/mu-plugins.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/mu-plugins.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/abstracts/base-reporter.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/abstracts/base-reporter.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/wordpress.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/classes/wordpress.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/templates/raw.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/templates/raw.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/templates/html.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/templates/html.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/settings/system-info/helpers/model-helper.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/settings/system-info/helpers/model-helper.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/beta-testers.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/beta-testers.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/preview.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/preview.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/shapes.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/shapes.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/template-library/classes/class-import-images.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/template-library/classes/class-import-images.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/template-library/manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/template-library/manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/template-library/sources/remote.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/template-library/sources/remote.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/template-library/sources/base.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/template-library/sources/base.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/template-library/sources/local.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/template-library/sources/local.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/maintenance-mode.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/maintenance-mode.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/plugin.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/plugin.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/conditions.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/conditions.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/managers/widgets.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/managers/widgets.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/managers/schemes.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/managers/schemes.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/managers/skins.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/managers/skins.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/managers/wordpress-widgets.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/managers/wordpress-widgets.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/managers/controls.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/managers/controls.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/managers/image.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/managers/image.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/managers/elements.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/managers/elements.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/user.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/user.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/upgrades.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/upgrades.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/editor.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/editor.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/rollback.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/rollback.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/slider.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/slider.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/tabs.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/tabs.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/wysiwyg.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/wysiwyg.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/code.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/code.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/icon.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/icon.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/choose.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/choose.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/gallery.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/gallery.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/image-dimensions.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/image-dimensions.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/number.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/number.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/text-shadow.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/text-shadow.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/order.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/order.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/box-shadow.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/box-shadow.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/dimensions.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/dimensions.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/divider.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/divider.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/hidden.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/hidden.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/animation.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/animation.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/heading.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/heading.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/popover-toggle.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/popover-toggle.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/tab.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/tab.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/date-time.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/date-time.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/repeater.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/repeater.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/groups/border.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/groups/border.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/groups/text-shadow.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/groups/text-shadow.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/groups/image-size.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/groups/image-size.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/groups/box-shadow.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/groups/box-shadow.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/groups/typography.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/groups/typography.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/groups/background.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/groups/background.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/groups/base.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/groups/base.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/groups/css-filter.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/groups/css-filter.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/section.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/section.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/switcher.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/switcher.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/url.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/url.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/hover-animation.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/hover-animation.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/font.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/font.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/structure.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/structure.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/base-multiple.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/base-multiple.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/wp-widget.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/wp-widget.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/color.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/color.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/base.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/base.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/textarea.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/textarea.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/raw-html.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/raw-html.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/select.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/select.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/base-ui.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/base-ui.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/base-data.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/base-data.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/media.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/media.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/select2.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/select2.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/text.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/text.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/base-units.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/base-units.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/controls/button.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/controls/button.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/elements/repeater.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/elements/repeater.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/elements/section.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/elements/section.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/elements/column.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/elements/column.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/embed.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/embed.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/db.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/db.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/fonts.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/fonts.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/heartbeat.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/heartbeat.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/utils.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/utils.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/tracker.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/tracker.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/api.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/api.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/stylesheet.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/stylesheet.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/editor-templates/global.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/editor-templates/global.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/editor-templates/panel-elements.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/editor-templates/panel-elements.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/editor-templates/templates.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/editor-templates/templates.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/editor-templates/navigator.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/editor-templates/navigator.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/editor-templates/editor-wrapper.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/editor-templates/editor-wrapper.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/editor-templates/repeater.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/editor-templates/repeater.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/editor-templates/panel.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/editor-templates/panel.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/admin.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/admin.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/compatibility.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/compatibility.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/autoloader.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/autoloader.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/base/element-base.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/base/element-base.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/base/widget-base.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/base/widget-base.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/base/skin-base.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/base/skin-base.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/base/controls-stack.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/base/controls-stack.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/tabs.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/tabs.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/spacer.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/spacer.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/icon.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/icon.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/progress.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/progress.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/icon-list.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/icon-list.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/shortcode.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/shortcode.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/menu-anchor.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/menu-anchor.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/accordion.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/accordion.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/icon-box.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/icon-box.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/divider.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/divider.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/alert.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/alert.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/google-maps.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/google-maps.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/heading.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/heading.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/counter.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/counter.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/testimonial.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/testimonial.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/image-box.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/image-box.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/image-carousel.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/image-carousel.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/text-editor.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/text-editor.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/image-gallery.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/image-gallery.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/social-icons.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/social-icons.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/wordpress.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/wordpress.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/html.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/html.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/video.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/video.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/audio.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/audio.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/common.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/common.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/sidebar.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/sidebar.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/image.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/image.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/toggle.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/toggle.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/widgets/button.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/widgets/button.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/interfaces/group-control.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/interfaces/group-control.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/interfaces/scheme.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/interfaces/scheme.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/frontend.php" tests="2" failures="2">
+ <testcase name="WordPress.WP.EnqueuedResourceParameters.MissingVersion at /Users/yakir/Git/elementor/includes/frontend.php (664:13)">
+  <failure type="error" message="Resource version not set in call to wp_enqueue_style(). This means new versions of the style will not always be loaded due to browser caching."/>
+ </testcase>
+ <testcase name="WordPress.WP.EnqueuedResourceParameters.MissingVersion at /Users/yakir/Git/elementor/includes/frontend.php (675:17)">
+  <failure type="error" message="Resource version not set in call to wp_enqueue_style(). This means new versions of the style will not always be loaded due to browser caching."/>
+ </testcase>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/debug/debug-reporter.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/debug/debug-reporter.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/includes/debug/debug.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/includes/debug/debug.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/elementor.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/elementor.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/wp-cli/module.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/wp-cli/module.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/wp-cli/command.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/wp-cli/command.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/gutenberg/module.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/gutenberg/module.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/dynamic-tags/module.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/dynamic-tags/module.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/library/module.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/library/module.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/library/documents/section.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/library/documents/section.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/library/documents/library-document.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/library/documents/library-document.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/library/documents/page.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/library/documents/page.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/page-templates/module.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/page-templates/module.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/page-templates/templates/header-footer.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/page-templates/templates/header-footer.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/page-templates/templates/canvas.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/page-templates/templates/canvas.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/history/module.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/history/module.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/history/revisions-manager.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/history/revisions-manager.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/history/views/history-panel-template.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/history/views/history-panel-template.php"/>
+</testsuite>
+<testsuite name="/Users/yakir/Git/elementor/modules/history/views/revisions-panel-template.php" tests="1" failures="0">
+ <testcase name="/Users/yakir/Git/elementor/modules/history/views/revisions-panel-template.php"/>
+</testsuite>
+</testsuites>
+

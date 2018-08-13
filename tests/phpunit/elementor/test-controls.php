@@ -42,7 +42,7 @@ class Elementor_Test_Controls extends Elementor_Test_Base {
 
 		$control = $this->elementor()->controls_manager->get_control( $control_id );
 
-		$this->assertInstanceOf( $control_class . 'sasd', $control );
+		$this->assertInstanceOf( $control_class, $control );
 
 		$this->assertTrue( $this->elementor()->controls_manager->unregister_control( $control_id ) );
 		$this->assertFalse( $this->elementor()->controls_manager->unregister_control( $control_id ) );
