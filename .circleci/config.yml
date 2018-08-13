@@ -187,7 +187,7 @@ jobs:
           export PATH=$HOME/.composer/vendor/bin:$PATH
           mkdir -p ~/junit
           phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
-          phpcs -p -s -n . --standard=./ruleset.xml --extensions=php --report=gitblame --report-junit=~/junit
+          phpcs -p -s -n . --standard=./ruleset.xml --extensions=php --report=gitblame --report-junit=~/junit/phpcs.xml
     - store_test_results:
         path: ~/junit
     - store_artifacts:
