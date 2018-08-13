@@ -185,9 +185,9 @@ jobs:
         name: "Run PHP lint"
         command: |
           export PATH=$HOME/.composer/vendor/bin:$PATH
-          mkdir -p ~/junit
+          mkdir -p /root/junit
           phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
-          phpcs -p -s -n . --standard=./ruleset.xml --extensions=php --report=gitblame --report-junit=~/junit/phpcs.xml
+          phpcs -p -s -n . --standard=./ruleset.xml --extensions=php --report=gitblame --report-junit=/root/phpcs.xml
     - store_test_results:
         path: ~/junit
     - store_artifacts:
