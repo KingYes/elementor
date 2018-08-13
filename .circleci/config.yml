@@ -189,6 +189,6 @@ jobs:
           phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
           phpcs -p -s -n . --standard=./ruleset.xml --extensions=php --report=gitblame --report-junit=~/junit/phpcs-junit.xml
     - store_test_results:
-        path: ~/phpunit
+        path: ~/junit
     - store_artifacts:
-        path: ~/phpunit
+        path: ~/junit
