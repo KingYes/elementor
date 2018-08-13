@@ -4,7 +4,7 @@
  * Handles managing all events for whatever you plug it into. Priorities for hooks are based on lowest to highest in
  * that, lowest priority hooks are fired first.
  */
-var EventManager = function() {
+var EventManager = function(){
 	var slice = Array.prototype.slice,
 		MethodsAvailable;
 
